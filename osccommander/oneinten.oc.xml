@@ -2,8 +2,8 @@
    <layoutName>Reaper Mixer v1.0</layoutName>
    <layoutSummary>Reaper Mixer Layout</layoutSummary>
    <rotation>1</rotation>
-   <height>1504</height>
-   <width>2560</width>
+   <height>752</height>
+   <width>1280</width>
    <fader version="1.8" text="Vol 1">
       <OSCBundle>
          <OSCMessage>
@@ -57,13 +57,13 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <Z>33</Z>
-      <X>5</X>
-      <Y>469</Y>
-      <width>244</width>
-      <height>925</height>
+      <Z>32</Z>
+      <X>0</X>
+      <Y>130</Y>
+      <width>120</width>
+      <height>570</height>
       <borderwidth>0</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>true</isTouchable>
       <displayName>false</displayName>
@@ -71,7 +71,7 @@
       <isSliding>false</isSliding>
       <isRelative>true</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
@@ -129,12 +129,12 @@
          <borderAlpha>255</borderAlpha>
       </colors>
       <Z>28</Z>
-      <X>4</X>
-      <Y>471</Y>
-      <width>24</width>
-      <height>925</height>
-      <borderwidth>2</borderwidth>
-      <smoothingFactor>12.0</smoothingFactor>
+      <X>1</X>
+      <Y>130</Y>
+      <width>13</width>
+      <height>570</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>6.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -142,7 +142,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
@@ -200,12 +200,12 @@
          <borderAlpha>255</borderAlpha>
       </colors>
       <Z>27</Z>
-      <X>226</X>
-      <Y>471</Y>
-      <width>24</width>
-      <height>925</height>
-      <borderwidth>2</borderwidth>
-      <smoothingFactor>12.0</smoothingFactor>
+      <X>107</X>
+      <Y>129</Y>
+      <width>13</width>
+      <height>570</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>6.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -213,7 +213,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
@@ -271,12 +271,12 @@
          <borderAlpha>255</borderAlpha>
       </colors>
       <Z>30</Z>
-      <X>2</X>
-      <Y>1401</Y>
-      <width>246</width>
-      <height>45</height>
-      <borderwidth>2</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>0</X>
+      <Y>700</Y>
+      <width>120</width>
+      <height>22</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -284,7 +284,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
@@ -342,12 +342,12 @@
          <borderAlpha>255</borderAlpha>
       </colors>
       <Z>31</Z>
-      <X>4</X>
-      <Y>341</Y>
-      <width>246</width>
-      <height>112</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>0</X>
+      <Y>68</Y>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>true</isTouchable>
       <displayName>true</displayName>
@@ -355,7 +355,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
@@ -413,12 +413,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>29</Z>
-      <X>29</X>
-      <Y>492</Y>
-      <width>196</width>
-      <height>50</height>
+      <X>10</X>
+      <Y>141</Y>
+      <width>97</width>
+      <height>31</height>
       <borderwidth>0</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -426,78 +426,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
-      <backgroundImage> </backgroundImage>
-      <foregroundImage> </foregroundImage>
-   </toggleButton>
-   <toggleButton version="1.8" text="masterVol Val">
-      <OSCBundle>
-         <OSCMessage>
-            <OSCAddress>/1/mastervolumeVal</OSCAddress>
-            <OSCArgument version="1.2">
-               <activeAxes>
-                  <axis>
-                     <number>1</number>
-                     <active>false</active>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <active>false</active>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <active>false</active>
-                  </axis>
-               </activeAxes>
-               <scalingAxes>
-                  <axis>
-                     <number>1</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <function>3</function>
-                  </axis>
-               </scalingAxes>
-               <valueOfString>On</valueOfString>
-               <refOfString>Off</refOfString>
-               <maxOfString>-oo dB</maxOfString>
-               <defOfString>1</defOfString>
-               <minOfString>Off</minOfString>
-               <isListening>false</isListening>
-               <displayOnWidget>true</displayOnWidget>
-            </OSCArgument>
-         </OSCMessage>
-      </OSCBundle>
-      <colors>
-         <foreColor>16711680</foreColor>
-         <backColor>4210752</backColor>
-         <textColor>-1</textColor>
-         <borderColor>255</borderColor>
-         <foreAlpha>0</foreAlpha>
-         <backAlpha>0</backAlpha>
-         <textAlpha>255</textAlpha>
-         <borderAlpha>0</borderAlpha>
-      </colors>
-      <Z>32</Z>
-      <X>48</X>
-      <Y>493</Y>
-      <width>177</width>
-      <height>49</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
-      <rotation>0.0</rotation>
-      <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
-      <localFeedback>true</localFeedback>
-      <isSliding>false</isSliding>
-      <isRelative>false</isRelative>
-      <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
@@ -514,12 +443,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>26</Z>
-      <X>13</X>
-      <Y>537</Y>
-      <width>74</width>
-      <height>115</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>169</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -527,7 +456,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -544,12 +473,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>25</Z>
-      <X>13</X>
-      <Y>623</Y>
-      <width>74</width>
-      <height>114</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>221</Y>
+      <width>36</width>
+      <height>70</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -557,7 +486,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -574,12 +503,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>24</Z>
-      <X>13</X>
-      <Y>775</Y>
-      <width>74</width>
-      <height>115</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>315</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -587,7 +516,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -604,12 +533,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>23</Z>
-      <X>13</X>
-      <Y>896</Y>
-      <width>74</width>
-      <height>116</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>389</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -617,7 +546,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -634,12 +563,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>22</Z>
-      <X>13</X>
-      <Y>986</Y>
-      <width>74</width>
-      <height>114</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>444</Y>
+      <width>36</width>
+      <height>70</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -647,7 +576,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -664,12 +593,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>21</Z>
-      <X>13</X>
-      <Y>1048</Y>
-      <width>74</width>
-      <height>116</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>483</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -677,7 +606,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -694,12 +623,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>20</Z>
-      <X>13</X>
-      <Y>1094</Y>
-      <width>74</width>
-      <height>115</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>511</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -707,7 +636,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -724,12 +653,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>19</Z>
-      <X>13</X>
-      <Y>1185</Y>
-      <width>74</width>
-      <height>116</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>567</Y>
+      <width>36</width>
+      <height>72</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -737,7 +666,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -754,12 +683,12 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>18</Z>
-      <X>13</X>
-      <Y>1247</Y>
-      <width>74</width>
-      <height>115</height>
-      <borderwidth>5</borderwidth>
-      <smoothingFactor>25.0</smoothingFactor>
+      <X>5</X>
+      <Y>605</Y>
+      <width>36</width>
+      <height>71</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>true</displayName>
@@ -767,7 +696,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-30</font>
+      <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -784,11 +713,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>17</Z>
-      <X>226</X>
-      <Y>580</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>195</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -797,7 +726,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -814,11 +743,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>16</Z>
-      <X>226</X>
-      <Y>663</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>246</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -827,7 +756,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -844,11 +773,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>15</Z>
-      <X>226</X>
-      <Y>813</Y>
-      <width>24</width>
-      <height>39</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>338</Y>
+      <width>13</width>
+      <height>24</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -857,7 +786,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -874,11 +803,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>14</Z>
-      <X>226</X>
-      <Y>935</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>413</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -887,7 +816,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -904,11 +833,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>13</Z>
-      <X>226</X>
-      <Y>1021</Y>
-      <width>24</width>
-      <height>38</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>466</Y>
+      <width>13</width>
+      <height>24</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -917,7 +846,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -934,11 +863,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>12</Z>
-      <X>226</X>
-      <Y>1087</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>507</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -947,7 +876,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -964,11 +893,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>11</Z>
-      <X>226</X>
-      <Y>1132</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>534</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -977,7 +906,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -994,11 +923,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>10</Z>
-      <X>226</X>
-      <Y>1222</Y>
-      <width>24</width>
-      <height>41</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>589</Y>
+      <width>13</width>
+      <height>26</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1007,7 +936,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1024,11 +953,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>9</Z>
-      <X>226</X>
-      <Y>1284</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>107</X>
+      <Y>628</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1037,7 +966,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1054,11 +983,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>8</Z>
-      <X>4</X>
-      <Y>580</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>195</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1067,7 +996,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1084,11 +1013,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>7</Z>
-      <X>4</X>
-      <Y>663</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>246</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1097,7 +1026,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1114,11 +1043,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>6</Z>
-      <X>4</X>
-      <Y>813</Y>
-      <width>24</width>
-      <height>39</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>339</Y>
+      <width>13</width>
+      <height>24</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1127,7 +1056,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1144,11 +1073,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>5</Z>
-      <X>4</X>
-      <Y>935</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>413</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1157,7 +1086,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1174,11 +1103,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>4</Z>
-      <X>4</X>
-      <Y>1021</Y>
-      <width>24</width>
-      <height>38</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>466</Y>
+      <width>13</width>
+      <height>24</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1187,7 +1116,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1204,11 +1133,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>3</Z>
-      <X>4</X>
-      <Y>1087</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>507</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1217,7 +1146,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1234,11 +1163,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>2</Z>
-      <X>4</X>
-      <Y>1132</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>534</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1247,7 +1176,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1264,11 +1193,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>1</Z>
-      <X>4</X>
-      <Y>1222</Y>
-      <width>24</width>
-      <height>41</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>589</Y>
+      <width>13</width>
+      <height>26</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1277,7 +1206,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
@@ -1294,11 +1223,11 @@
          <borderAlpha>0</borderAlpha>
       </colors>
       <Z>0</Z>
-      <X>4</X>
-      <Y>1284</Y>
-      <width>24</width>
-      <height>40</height>
-      <borderwidth>1</borderwidth>
+      <X>1</X>
+      <Y>628</Y>
+      <width>13</width>
+      <height>25</height>
+      <borderwidth>0</borderwidth>
       <smoothingFactor>0.0</smoothingFactor>
       <rotation>0.0</rotation>
       <isTouchable>false</isTouchable>
@@ -1307,7 +1236,7 @@
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
-      <font>Dialog-plain-72</font>
+      <font>Dialog-plain-36</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </pad>
