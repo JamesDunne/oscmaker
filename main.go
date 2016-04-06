@@ -31,21 +31,10 @@ func b64encode(s string) string {
 }
 
 type PageCustomization struct {
-	PageName *string
+	PageName        *string
 	MasterFaderName **string
-	MixName **string
+	MixName         **string
 }
-
-// <control name="bWFzdGVyL2xldmVs" x="66" y="40" w="500" h="100" color="red"
-//   scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false"
-//   centered="false"></control>
-
-// <control name="bGFiZWwz" x="21" y="160" w="45" h="100" color="yellow"
-//   type="labelv" text="Vm94IE1H" size="14" background="false" outline="true"></control>
-
-// <control name="bWFzdGVyL3Bhbg==" x="566" y="40" w="100" h="100" color="red"
-//   scalef="0.0" scalet="1.0" type="rotaryh" response="absolute" inverted="false"
-//   centered="true" norollover="true" ></control>
 
 type Control struct {
 	XMLName xml.Name `xml:"control"`
@@ -97,11 +86,146 @@ type Layout struct {
 	TabPages    []TabPage `xml:"tabpage"`
 }
 
-func strPtr(s string) *string {
-	return &s
+func intPtr(i int) *int             { return &i }
+func strPtr(s string) *string       { return &s }
+func boolPtr(b bool) *bool          { return &b }
+func float64Ptr(f float64) *float64 { return &f }
+
+func makePage(tp *TabPage, bank int, pagename string, mixname string, masterlabel string) {
+	const tracks = 10
+	const controls = 3
+
+	const fader_min = 0.483
+	const fader_max_0 = 0.716878
+	const fader_max = 0.86
+
+	type ts struct {
+		name  string
+		color string
+		track int
+	}
+
+	var track_setup = []ts{
+		{"Master", "red", 1},
+		{"Vox MG", "yellow", 2},
+		{"Vox JD", "yellow", 3},
+		{"Vox AS", "yellow", 4},
+		{"Gtr MG", "purple", 6},
+		{"Gtr JD", "purple", 7},
+		{"Bass", "purple", 8},
+		{"Kick", "green", 10},
+		{"Snare", "green", 11},
+		{"Overheads", "green", 12},
+	}
+
+	tp.Name = pagename
+	tp.ScaleF = 0.0
+	tp.ScaleT = 1.0
+	tp.Controls = make([]Control, 0, tracks*controls)
+
+	// Mix name label:
+	tp.Controls = append(tp.Controls, Control{
+		Name:       "mixname",
+		Type:       "labelv",
+		X:          672,
+		Y:          483,
+		W:          40,
+		H:          260,
+		Color:      "orange",
+		Text:       strPtr(mixname),
+		Size:       intPtr(30),
+		Background: boolPtr(false),
+		Outline:    boolPtr(false),
+	})
+
+	bank_track := (bank - 1) * 12
+	track := track_setup[0].track + bank_track
+
+	// Master label
+	tp.Controls = append(tp.Controls, Control{
+		Name:       fmt.Sprintf("%d/label", track),
+		Type:       "labelv",
+		X:          20,
+		Y:          50,
+		W:          40,
+		H:          100,
+		Color:      track_setup[0].color,
+		Text:       strPtr(masterlabel),
+		Size:       intPtr(20),
+		Background: boolPtr(false),
+		Outline:    boolPtr(true),
+	})
+
+	// Master fader:
+	tp.Controls = append(tp.Controls, Control{
+		Name:     fmt.Sprintf("%d/volume", track),
+		Type:     "faderh",
+		X:        66,
+		Y:        50,
+		W:        600,
+		H:        100,
+		Color:    track_setup[0].color,
+		ScaleF:   float64Ptr(0.0),
+		ScaleT:   float64Ptr(fader_max_0),
+		Response: strPtr("absolute"),
+		Inverted: boolPtr(false),
+		Centered: boolPtr(false),
+	})
+
+	// Controls per track:
+	for i := 1; i < tracks; i++ {
+		track := track_setup[i].track + bank_track
+		// Label
+		tp.Controls = append(tp.Controls, Control{
+			Name:       fmt.Sprintf("%d/label", track),
+			Type:       "labelv",
+			X:          20,
+			Y:          50 + (i * 120),
+			W:          40,
+			H:          100,
+			Color:      track_setup[i].color,
+			Text:       strPtr(track_setup[i].name),
+			Size:       intPtr(20),
+			Background: boolPtr(false),
+			Outline:    boolPtr(true),
+		})
+
+		// Fader
+		tp.Controls = append(tp.Controls, Control{
+			Name:     fmt.Sprintf("%d/volume", track),
+			Type:     "faderh",
+			X:        66,
+			Y:        50 + (i * 120),
+			W:        600,
+			H:        100,
+			Color:    track_setup[i].color,
+			ScaleF:   float64Ptr(fader_min),
+			ScaleT:   float64Ptr(fader_max),
+			Response: strPtr("absolute"),
+			Inverted: boolPtr(false),
+			Centered: boolPtr(false),
+		})
+
+		//// Pan
+		//tp.Controls = append(tp.Controls, Control{
+		//	Name:       fmt.Sprintf("%d/pan", track),
+		//	Type:       "rotaryh",
+		//	X:          566,
+		//	Y:          50 + (i * 120),
+		//	W:          100,
+		//	H:          100,
+		//	Color:      "yellow",
+		//	ScaleF:     float64Ptr(0.25),
+		//	ScaleT:     float64Ptr(0.75),
+		//	Response:   strPtr("absolute"),
+		//	Inverted:   boolPtr(false),
+		//	Centered:   boolPtr(true),
+		//	NoRollover: boolPtr(true),
+		//})
+	}
 }
 
-func main() {
+func translateTemplate(layout *Layout) {
 	// Open ZIP file:
 	zf, err := zip.OpenReader(inFile)
 	if err != nil {
@@ -129,8 +253,7 @@ func main() {
 	xf.Close()
 	zf.Close()
 
-	var layout Layout
-	err = xml.Unmarshal(b, &layout)
+	err = xml.Unmarshal(b, layout)
 	if err != nil {
 		panic(err)
 	}
@@ -192,9 +315,36 @@ func main() {
 	*pc[4].PageName = "AS"
 	*pc[4].MixName = strPtr("Monitor for AS")
 	*pc[4].MasterFaderName = strPtr("AS Master")
+}
+
+func createLayout(layout *Layout) {
+	// Create layout:
+	layout.Version = 15
+	layout.Mode = 3
+	layout.Width = 752
+	layout.Height = 1280
+	layout.Orientation = "vertical"
+
+	layout.TabPages = make([]TabPage, 5)
+	makePage(&layout.TabPages[0], 1, "PA", "PA System", "Master")
+	makePage(&layout.TabPages[1], 2, "JD", "Monitor for JD", "Master")
+	makePage(&layout.TabPages[2], 3, "MG", "Monitor for MG", "Master")
+	makePage(&layout.TabPages[3], 4, "MB", "Monitor for MB", "Master")
+	makePage(&layout.TabPages[4], 5, "AS", "Monitor for AS", "Master")
+}
+
+func main() {
+	var layout Layout
+
+	//translateTemplate(&layout)
+
+	createLayout(&layout)
 
 	// Dump layout XML to stdout:
-	b, err = xml.MarshalIndent(&layout, "", "  ")
+	b, err := xml.MarshalIndent(&layout, "", "  ")
+	if err != nil {
+		panic(err)
+	}
 	fmt.Printf("%s\n", string(b))
 
 	// Base64 encode Name properties:
