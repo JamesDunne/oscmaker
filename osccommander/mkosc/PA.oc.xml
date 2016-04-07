@@ -4,6 +4,77 @@
    <width>1280</width>
    <height>752</height>
    <rotation>1</rotation>
+   <toggleButton version="1.8" text="Master">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/1/name</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
+               <defOfString>1</defOfString>
+               <minOfString>Off</minOfString>
+               <isListening>true</isListening>
+               <displayOnWidget>true</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>16727100</foreColor>
+         <backColor>1973790</backColor>
+         <textColor>-1775042766</textColor>
+         <borderColor>16711422</borderColor>
+         <foreAlpha>0</foreAlpha>
+         <backAlpha>0</backAlpha>
+         <textAlpha>150</textAlpha>
+         <borderAlpha>0</borderAlpha>
+      </colors>
+      <X>0</X>
+      <Y>700</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>false</isTouchable>
+      <displayName>false</displayName>
+      <localFeedback>true</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
    <fader version="1.8" text="Master">
       <OSCBundle>
          <OSCMessage>
@@ -39,7 +110,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -75,15 +146,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/1/vu</OSCAddress>
+            <OSCAddress>/track/2/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -108,13 +179,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -128,13 +199,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>0</X>
-      <Y>107</Y>
+      <X>128</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -145,7 +216,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
@@ -181,7 +252,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -190,8 +261,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-256</foreColor>
+         <backColor>-14803456</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -217,15 +288,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/2/vu</OSCAddress>
+            <OSCAddress>/track/3/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -250,13 +321,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -270,13 +341,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>128</X>
-      <Y>107</Y>
+      <X>256</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -287,7 +358,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
@@ -323,7 +394,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -332,8 +403,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-256</foreColor>
+         <backColor>-14803456</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -359,15 +430,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/3/vu</OSCAddress>
+            <OSCAddress>/track/4/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -392,13 +463,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -412,13 +483,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>256</X>
-      <Y>107</Y>
+      <X>384</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -429,7 +500,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
@@ -465,7 +536,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -474,8 +545,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-256</foreColor>
+         <backColor>-14803456</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -501,15 +572,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/4/vu</OSCAddress>
+            <OSCAddress>/track/6/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -534,13 +605,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -554,13 +625,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>384</X>
-      <Y>107</Y>
+      <X>512</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -571,7 +642,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
@@ -607,7 +678,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -616,8 +687,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-3392513</foreColor>
+         <backColor>-14090184</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -643,15 +714,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/6/vu</OSCAddress>
+            <OSCAddress>/track/7/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -676,13 +747,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -696,13 +767,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>512</X>
-      <Y>107</Y>
+      <X>640</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -713,7 +784,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
@@ -749,7 +820,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -758,8 +829,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-3392513</foreColor>
+         <backColor>-14090184</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -785,15 +856,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/7/vu</OSCAddress>
+            <OSCAddress>/track/8/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -818,13 +889,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -838,13 +909,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>640</X>
-      <Y>107</Y>
+      <X>768</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -855,7 +926,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
@@ -891,7 +962,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -900,8 +971,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-3392513</foreColor>
+         <backColor>-14090184</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -927,15 +998,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/8/vu</OSCAddress>
+            <OSCAddress>/track/10/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -960,13 +1031,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -980,13 +1051,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>768</X>
-      <Y>107</Y>
+      <X>896</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -997,7 +1068,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
@@ -1033,7 +1104,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -1042,8 +1113,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-13382656</foreColor>
+         <backColor>-15779072</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -1069,15 +1140,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/10/vu</OSCAddress>
+            <OSCAddress>/track/11/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -1102,13 +1173,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1122,13 +1193,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>896</X>
-      <Y>107</Y>
+      <X>1024</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -1139,7 +1210,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
@@ -1175,7 +1246,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -1184,8 +1255,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-13382656</foreColor>
+         <backColor>-15779072</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -1211,15 +1282,15 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <fader version="1.8" text="VU L">
+   <toggleButton version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/11/vu</OSCAddress>
+            <OSCAddress>/track/12/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
                      <number>1</number>
-                     <active>true</active>
+                     <active>false</active>
                   </axis>
                   <axis>
                      <number>2</number>
@@ -1244,13 +1315,13 @@
                      <function>3</function>
                   </axis>
                </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <valueOfString>On</valueOfString>
+               <refOfString>Off</refOfString>
+               <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
+               <minOfString>Off</minOfString>
                <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
+               <displayOnWidget>true</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1264,13 +1335,13 @@
          <textAlpha>150</textAlpha>
          <borderAlpha>0</borderAlpha>
       </colors>
-      <X>1024</X>
-      <Y>107</Y>
+      <X>1152</X>
+      <Y>700</Y>
       <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>1</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
       <displayName>false</displayName>
@@ -1281,7 +1352,7 @@
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
-   </fader>
+   </toggleButton>
    <fader version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
@@ -1317,7 +1388,7 @@
                </scalingAxes>
                <valueOFloat>1</valueOFloat>
                <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
+               <maxOFloat>0.716878</maxOFloat>
                <defOfString>1</defOfString>
                <minOFloat>0</minOFloat>
                <isListening>true</isListening>
@@ -1326,8 +1397,8 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
-         <backColor>-14803426</backColor>
+         <foreColor>-13382656</foreColor>
+         <backColor>-15779072</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -1348,77 +1419,6 @@
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>true</isRelative>
-      <contForeImg>false</contForeImg>
-      <font>Dialog-plain-15</font>
-      <backgroundImage> </backgroundImage>
-      <foregroundImage> </foregroundImage>
-   </fader>
-   <fader version="1.8" text="VU L">
-      <OSCBundle>
-         <OSCMessage>
-            <OSCAddress>/track/12/vu</OSCAddress>
-            <OSCArgument version="1.2">
-               <activeAxes>
-                  <axis>
-                     <number>1</number>
-                     <active>true</active>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <active>false</active>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <active>false</active>
-                  </axis>
-               </activeAxes>
-               <scalingAxes>
-                  <axis>
-                     <number>1</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <function>3</function>
-                  </axis>
-               </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0</maxOFloat>
-               <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
-               <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
-            </OSCArgument>
-         </OSCMessage>
-      </OSCBundle>
-      <colors>
-         <foreColor>16727100</foreColor>
-         <backColor>1973790</backColor>
-         <textColor>-1775042766</textColor>
-         <borderColor>16711422</borderColor>
-         <foreAlpha>0</foreAlpha>
-         <backAlpha>0</backAlpha>
-         <textAlpha>150</textAlpha>
-         <borderAlpha>0</borderAlpha>
-      </colors>
-      <X>1152</X>
-      <Y>107</Y>
-      <Z>0</Z>
-      <width>13</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>0</smoothingFactor>
-      <rotation>0</rotation>
-      <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
-      <localFeedback>true</localFeedback>
-      <isSliding>false</isSliding>
-      <isRelative>false</isRelative>
       <contForeImg>false</contForeImg>
       <font>Dialog-plain-15</font>
       <backgroundImage> </backgroundImage>

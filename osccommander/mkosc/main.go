@@ -13,6 +13,10 @@ type ts struct {
 	track int
 }
 
+const (
+	reaper_zero_dB = 0.716878
+)
+
 var track_setup = []ts{
 	{"Master", "red", 1},
 	{"Vox MG", "yellow", 2},
@@ -48,10 +52,46 @@ var colors2 = Colors{
 }
 
 var colors_for = map[string]Colors{
-	"red":    colors,
-	"yellow": colors,
-	"purple": colors,
-	"green":  colors,
+	"red": Colors{
+		ForeColor:   -50116,
+		BackColor:   -14803426,
+		TextColor:   -1,
+		BorderColor: -12566464,
+		ForeAlpha:   255,
+		BackAlpha:   255,
+		TextAlpha:   255,
+		BorderAlpha: 255,
+	},
+	"yellow": Colors{
+		ForeColor:   -256,
+		BackColor:   -14803456,
+		TextColor:   -1,
+		BorderColor: -12566464,
+		ForeAlpha:   255,
+		BackAlpha:   255,
+		TextAlpha:   255,
+		BorderAlpha: 255,
+	},
+	"purple": Colors{
+		ForeColor:   -3392513,
+		BackColor:   -14090184,
+		TextColor:   -1,
+		BorderColor: -12566464,
+		ForeAlpha:   255,
+		BackAlpha:   255,
+		TextAlpha:   255,
+		BorderAlpha: 255,
+	},
+	"green": Colors{
+		ForeColor:   -13382656,
+		BackColor:   -15779072,
+		TextColor:   -1,
+		BorderColor: -12566464,
+		ForeAlpha:   255,
+		BackAlpha:   255,
+		TextAlpha:   255,
+		BorderAlpha: 255,
+	},
 }
 
 func createLayout(bank int, layoutname string, mixname string, masterlabel string) {
@@ -72,8 +112,21 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 	for t, ts := range track_setup {
 		track := ts.track + bank_track
 
+		// Label:
+		c := newToggleButton(fmt.Sprintf("/track/%d/name", track), ts.name)
+		c.X = t*spacing + 0
+		c.Y = 700
+		c.Width = 120
+		c.Height = 60
+		c.Borderwidth = 1
+		c.SmoothingFactor = 12.0
+		c.IsTouchable = false
+		c.DisplayName = false
+		c.LocalFeedback = true
+		layout.Controls = append(layout.Controls, c)
+
 		// Fader:
-		c := newFader(fmt.Sprintf("/track/%d/volume", track), ts.name)
+		c = newFader(fmt.Sprintf("/track/%d/volume", track), ts.name)
 		c.X = t*spacing + 0
 		c.Y = 130
 		c.Width = 120
@@ -82,17 +135,14 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 		c.Colors = colors_for[ts.color]
 		c.IsTouchable = true
 		c.IsRelative = true
+		// TODO: is Default misnamed as Max? Editor seems to confuse the two.
+		c.OSCBundle.OSCMessages[0].OSCArguments[0].MaxOFloat = HaveFloat(reaper_zero_dB)
 		layout.Controls = append(layout.Controls, c)
 
 		// VU L:
-		c = newFader(fmt.Sprintf("/track/%d/vu", track), "VU L")
-		c.X = t*spacing + 0
-		c.Y = 107
-		c.Width = 13
-		c.Height = 570
-		layout.Controls = append(layout.Controls, c)
-
 		// VU R:
+
+		// Mute:
 	}
 
 	// Dump layout XML to stdout:

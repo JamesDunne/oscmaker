@@ -173,8 +173,26 @@ const (
 )
 
 var (
-	fader = xml.Name{Local: "fader"}
-	pad   = xml.Name{Local: "pad"}
+	fader        = xml.Name{Local: "fader"}
+	toggleButton = xml.Name{Local: "toggleButton"}
+	pad          = xml.Name{Local: "pad"}
+
+	activeAxesNone = ActiveAxes{
+		Axes: []AxisActive{
+			AxisActive{
+				Number: 1,
+				Active: false,
+			},
+			AxisActive{
+				Number: 2,
+				Active: false,
+			},
+			AxisActive{
+				Number: 3,
+				Active: false,
+			},
+		},
+	}
 
 	activeAxes1 = ActiveAxes{
 		Axes: []AxisActive{
@@ -230,6 +248,34 @@ func newFader(osc string, text string) *Control {
 						MinOFloat:       HaveFloat(0.0),
 						IsListening:     true,
 						DisplayOnWidget: false,
+					},
+				},
+			},
+		},
+	}
+	return c
+}
+
+func newToggleButton(osc string, text string) *Control {
+	c := newControl(toggleButton)
+	c.Text = text
+
+	c.OSCBundle = OSCBundle{
+		[]OSCMessage{
+			OSCMessage{
+				OSCAddress: osc,
+				OSCArguments: []OSCArgument{
+					OSCArgument{
+						Version:         argument_version,
+						ActiveAxes:      activeAxesNone,
+						ScalingAxes:     scalingAxes3,
+						ValueOfString:   strPtr("On"),
+						RefOfString:     strPtr("Off"),
+						MaxOfString:     strPtr("On"),
+						DefOfString:     strPtr("1"),
+						MinOfString:     strPtr("Off"),
+						IsListening:     true,
+						DisplayOnWidget: true,
 					},
 				},
 			},
