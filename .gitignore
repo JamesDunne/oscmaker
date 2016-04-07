@@ -1,2 +1,5 @@
+touchosc/layouts/
 *.wav
 *.reapeaks
+*.exe
+*.RPP-bak
