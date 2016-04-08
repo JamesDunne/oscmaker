@@ -112,6 +112,19 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 	layout.Rotation = 1
 	layout.Controls = make([]*Control, 0, 1)
 
+	// Top label:
+	c := newPad(mixname)
+	c.X = 402
+	c.Y = 0
+	c.Z = 0
+	c.Width = 470
+	c.Height = 70
+	c.Borderwidth = 0
+	c.IsTouchable = false
+	c.DisplayName = true
+	c.Font = "Dialog-plain-38"
+	layout.Controls = append(layout.Controls, c)
+
 	bank_track := (bank - 1) * 12
 	const spacing = 128
 
@@ -156,14 +169,14 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 		c.X = t*spacing + 0
 		c.Y = 700
 		c.Width = 120
-		c.Height = 60
+		c.Height = 52
 		c.Borderwidth = 1
 		c.SmoothingFactor = 12.0
 		c.IsTouchable = false
 		c.DisplayName = true
 		c.LocalFeedback = true
+		c.Font = "Dialog-plain-20"
 		layout.Controls = append(layout.Controls, c)
-
 	}
 
 	// Dump layout XML to stdout:
@@ -189,8 +202,8 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 
 func main() {
 	createLayout(1, "PA", "PA System", "Master")
-	//	createLayout(2, "JD", "Monitor for JD", "Master")
-	//	createLayout(3, "MG", "Monitor for MG", "Master")
-	//	createLayout(4, "MB", "Monitor for MB", "Master")
-	//	createLayout(5, "AS", "Monitor for AS", "Master")
+	createLayout(2, "JD", "Monitor for JD", "Master")
+	createLayout(3, "MG", "Monitor for MG", "Master")
+	createLayout(4, "MB", "Monitor for MB", "Master")
+	createLayout(5, "AS", "Monitor for AS", "Master")
 }

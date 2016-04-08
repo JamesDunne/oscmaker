@@ -275,6 +275,13 @@ func newFader(osc string, text string) *Control {
 	return c
 }
 
+func newPad(text string) *Control {
+	c := newControl(fader)
+	c.Text = text
+	c.OSCBundle = OSCBundle{}
+	return c
+}
+
 func newToggleButton(osc string, text string, arg OSCArgument) *Control {
 	c := newControl(toggleButton)
 	c.Text = text
