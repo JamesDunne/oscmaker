@@ -1,10 +1,10 @@
 <main version="1.3">
-   <layoutName>MG - One In Ten</layoutName>
-   <layoutSummary>MG mix</layoutSummary>
+   <layoutName>2 - JD</layoutName>
+   <layoutSummary>JD mix</layoutSummary>
    <width>1280</width>
    <height>752</height>
    <rotation>1</rotation>
-   <fader version="1.8" text="Monitor for MG">
+   <fader version="1.8" text="Monitor for JD">
       <OSCBundle></OSCBundle>
       <colors>
          <foreColor>16727100</foreColor>
@@ -37,7 +37,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/25/mute</OSCAddress>
+            <OSCAddress>/track/13/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -105,10 +105,10 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Master">
+   <fader version="1.8" text="JD Master">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/25/volume</OSCAddress>
+            <OSCAddress>/track/13/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -176,10 +176,10 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <toggleButton version="1.8" text="Master">
+   <toggleButton version="1.8" text="JD Master">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/25/name</OSCAddress>
+            <OSCAddress>/track/13/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -214,8 +214,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -250,7 +250,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/26/mute</OSCAddress>
+            <OSCAddress>/track/14/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -321,7 +321,7 @@
    <fader version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/26/volume</OSCAddress>
+            <OSCAddress>/track/14/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -392,7 +392,7 @@
    <toggleButton version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/26/name</OSCAddress>
+            <OSCAddress>/track/14/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -427,8 +427,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -463,7 +463,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/27/mute</OSCAddress>
+            <OSCAddress>/track/15/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -534,7 +534,7 @@
    <fader version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/27/volume</OSCAddress>
+            <OSCAddress>/track/15/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -605,7 +605,7 @@
    <toggleButton version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/27/name</OSCAddress>
+            <OSCAddress>/track/15/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -640,8 +640,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -676,7 +676,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/28/mute</OSCAddress>
+            <OSCAddress>/track/16/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -747,7 +747,7 @@
    <fader version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/28/volume</OSCAddress>
+            <OSCAddress>/track/16/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -818,7 +818,7 @@
    <toggleButton version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/28/name</OSCAddress>
+            <OSCAddress>/track/16/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -853,8 +853,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -889,7 +889,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/30/mute</OSCAddress>
+            <OSCAddress>/track/18/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -960,7 +960,7 @@
    <fader version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/30/volume</OSCAddress>
+            <OSCAddress>/track/18/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1031,7 +1031,7 @@
    <toggleButton version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/30/name</OSCAddress>
+            <OSCAddress>/track/18/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1066,8 +1066,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1102,7 +1102,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/31/mute</OSCAddress>
+            <OSCAddress>/track/19/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1173,7 +1173,7 @@
    <fader version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/31/volume</OSCAddress>
+            <OSCAddress>/track/19/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1244,7 +1244,7 @@
    <toggleButton version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/31/name</OSCAddress>
+            <OSCAddress>/track/19/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1279,8 +1279,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1315,7 +1315,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/32/mute</OSCAddress>
+            <OSCAddress>/track/20/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1386,7 +1386,7 @@
    <fader version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/32/volume</OSCAddress>
+            <OSCAddress>/track/20/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1457,7 +1457,7 @@
    <toggleButton version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/32/name</OSCAddress>
+            <OSCAddress>/track/20/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1492,8 +1492,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1528,7 +1528,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/34/mute</OSCAddress>
+            <OSCAddress>/track/22/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1599,7 +1599,7 @@
    <fader version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/34/volume</OSCAddress>
+            <OSCAddress>/track/22/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1670,7 +1670,7 @@
    <toggleButton version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/34/name</OSCAddress>
+            <OSCAddress>/track/22/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1705,8 +1705,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1741,7 +1741,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/35/mute</OSCAddress>
+            <OSCAddress>/track/23/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1812,7 +1812,7 @@
    <fader version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/35/volume</OSCAddress>
+            <OSCAddress>/track/23/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1883,7 +1883,7 @@
    <toggleButton version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/35/name</OSCAddress>
+            <OSCAddress>/track/23/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1918,8 +1918,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1954,7 +1954,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/36/mute</OSCAddress>
+            <OSCAddress>/track/24/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -2025,7 +2025,7 @@
    <fader version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/36/volume</OSCAddress>
+            <OSCAddress>/track/24/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -2096,7 +2096,7 @@
    <toggleButton version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/36/name</OSCAddress>
+            <OSCAddress>/track/24/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -2131,8 +2131,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>

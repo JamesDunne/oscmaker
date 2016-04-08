@@ -1,5 +1,5 @@
 <main version="1.3">
-   <layoutName>PA - One In Ten</layoutName>
+   <layoutName>1 - PA</layoutName>
    <layoutSummary>PA mix</layoutSummary>
    <width>1280</width>
    <height>752</height>
@@ -105,7 +105,7 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Master">
+   <fader version="1.8" text="PA Master">
       <OSCBundle>
          <OSCMessage>
             <OSCAddress>/track/1/volume</OSCAddress>
@@ -176,7 +176,7 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </fader>
-   <toggleButton version="1.8" text="Master">
+   <toggleButton version="1.8" text="PA Master">
       <OSCBundle>
          <OSCMessage>
             <OSCAddress>/track/1/name</OSCAddress>
@@ -214,8 +214,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -427,8 +427,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -640,8 +640,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -853,8 +853,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1066,8 +1066,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1279,8 +1279,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1492,8 +1492,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1705,8 +1705,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -1918,8 +1918,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
@@ -2131,8 +2131,8 @@
                <maxOfString>On</maxOfString>
                <defOfString>1</defOfString>
                <minOfString>Off</minOfString>
-               <isListening>true</isListening>
-               <displayOnWidget>true</displayOnWidget>
+               <isListening>false</isListening>
+               <displayOnWidget>false</displayOnWidget>
             </OSCArgument>
          </OSCMessage>
       </OSCBundle>
