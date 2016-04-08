@@ -1,10 +1,10 @@
 <main version="1.3">
-   <layoutName>PA - One In Ten</layoutName>
-   <layoutSummary>PA mix</layoutSummary>
+   <layoutName>MG - One In Ten</layoutName>
+   <layoutSummary>MG mix</layoutSummary>
    <width>1280</width>
    <height>752</height>
    <rotation>1</rotation>
-   <fader version="1.8" text="PA System">
+   <fader version="1.8" text="Monitor for MG">
       <OSCBundle></OSCBundle>
       <colors>
          <foreColor>16727100</foreColor>
@@ -37,7 +37,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/1/mute</OSCAddress>
+            <OSCAddress>/track/25/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -108,7 +108,7 @@
    <fader version="1.8" text="Master">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/1/volume</OSCAddress>
+            <OSCAddress>/track/25/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -179,7 +179,7 @@
    <toggleButton version="1.8" text="Master">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/1/name</OSCAddress>
+            <OSCAddress>/track/25/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -250,7 +250,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/2/mute</OSCAddress>
+            <OSCAddress>/track/26/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -321,7 +321,7 @@
    <fader version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/2/volume</OSCAddress>
+            <OSCAddress>/track/26/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -392,7 +392,7 @@
    <toggleButton version="1.8" text="Vox MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/2/name</OSCAddress>
+            <OSCAddress>/track/26/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -463,7 +463,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/3/mute</OSCAddress>
+            <OSCAddress>/track/27/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -534,7 +534,7 @@
    <fader version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/3/volume</OSCAddress>
+            <OSCAddress>/track/27/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -605,7 +605,7 @@
    <toggleButton version="1.8" text="Vox JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/3/name</OSCAddress>
+            <OSCAddress>/track/27/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -676,7 +676,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/4/mute</OSCAddress>
+            <OSCAddress>/track/28/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -747,7 +747,7 @@
    <fader version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/4/volume</OSCAddress>
+            <OSCAddress>/track/28/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -818,7 +818,7 @@
    <toggleButton version="1.8" text="Vox AS">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/4/name</OSCAddress>
+            <OSCAddress>/track/28/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -889,7 +889,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/6/mute</OSCAddress>
+            <OSCAddress>/track/30/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -960,7 +960,7 @@
    <fader version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/6/volume</OSCAddress>
+            <OSCAddress>/track/30/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1031,7 +1031,7 @@
    <toggleButton version="1.8" text="Gtr MG">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/6/name</OSCAddress>
+            <OSCAddress>/track/30/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1102,7 +1102,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/7/mute</OSCAddress>
+            <OSCAddress>/track/31/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1173,7 +1173,7 @@
    <fader version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/7/volume</OSCAddress>
+            <OSCAddress>/track/31/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1244,7 +1244,7 @@
    <toggleButton version="1.8" text="Gtr JD">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/7/name</OSCAddress>
+            <OSCAddress>/track/31/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1315,7 +1315,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/8/mute</OSCAddress>
+            <OSCAddress>/track/32/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1386,7 +1386,7 @@
    <fader version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/8/volume</OSCAddress>
+            <OSCAddress>/track/32/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1457,7 +1457,7 @@
    <toggleButton version="1.8" text="Bass">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/8/name</OSCAddress>
+            <OSCAddress>/track/32/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1528,7 +1528,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/10/mute</OSCAddress>
+            <OSCAddress>/track/34/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1599,7 +1599,7 @@
    <fader version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/10/volume</OSCAddress>
+            <OSCAddress>/track/34/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1670,7 +1670,7 @@
    <toggleButton version="1.8" text="Kick">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/10/name</OSCAddress>
+            <OSCAddress>/track/34/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1741,7 +1741,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/11/mute</OSCAddress>
+            <OSCAddress>/track/35/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1812,7 +1812,7 @@
    <fader version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/11/volume</OSCAddress>
+            <OSCAddress>/track/35/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1883,7 +1883,7 @@
    <toggleButton version="1.8" text="Snare">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/11/name</OSCAddress>
+            <OSCAddress>/track/35/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1954,7 +1954,7 @@
    <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/12/mute</OSCAddress>
+            <OSCAddress>/track/36/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -2025,7 +2025,7 @@
    <fader version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/12/volume</OSCAddress>
+            <OSCAddress>/track/36/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -2096,7 +2096,7 @@
    <toggleButton version="1.8" text="Overheads">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/12/name</OSCAddress>
+            <OSCAddress>/track/36/name</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
