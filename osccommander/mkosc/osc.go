@@ -172,6 +172,10 @@ const (
 	argument_version = "1.2"
 )
 
+const (
+	reaper_zero_dB = 0.716878
+)
+
 var (
 	fader        = xml.Name{Local: "fader"}
 	toggleButton = xml.Name{Local: "toggleButton"}
@@ -227,6 +231,32 @@ var (
 			},
 		},
 	}
+
+	argFloat = OSCArgument{
+		Version:         argument_version,
+		ActiveAxes:      activeAxes1,
+		ScalingAxes:     scalingAxes3,
+		ValueOFloat:     HaveFloat(1.0),
+		RefOFloat:       HaveFloat(0.0),
+		MaxOFloat:       HaveFloat(reaper_zero_dB),
+		DefOfString:     strPtr("1"),
+		MinOFloat:       HaveFloat(0.0),
+		IsListening:     true,
+		DisplayOnWidget: false,
+	}
+
+	argString = OSCArgument{
+		Version:         argument_version,
+		ActiveAxes:      activeAxesNone,
+		ScalingAxes:     scalingAxes3,
+		ValueOfString:   strPtr("On"),
+		RefOfString:     strPtr("Off"),
+		MaxOfString:     strPtr("On"),
+		DefOfString:     strPtr("1"),
+		MinOfString:     strPtr("Off"),
+		IsListening:     true,
+		DisplayOnWidget: true,
+	}
 )
 
 func newFader(osc string, text string) *Control {
@@ -237,18 +267,7 @@ func newFader(osc string, text string) *Control {
 			OSCMessage{
 				OSCAddress: osc,
 				OSCArguments: []OSCArgument{
-					OSCArgument{
-						Version:         argument_version,
-						ActiveAxes:      activeAxes1,
-						ScalingAxes:     scalingAxes3,
-						ValueOFloat:     HaveFloat(1.0),
-						RefOFloat:       HaveFloat(0.0),
-						MaxOFloat:       HaveFloat(0.0),
-						DefOfString:     strPtr("1"),
-						MinOFloat:       HaveFloat(0.0),
-						IsListening:     true,
-						DisplayOnWidget: false,
-					},
+					argFloat,
 				},
 			},
 		},
@@ -256,7 +275,7 @@ func newFader(osc string, text string) *Control {
 	return c
 }
 
-func newToggleButton(osc string, text string) *Control {
+func newToggleButton(osc string, text string, arg OSCArgument) *Control {
 	c := newControl(toggleButton)
 	c.Text = text
 
@@ -265,18 +284,7 @@ func newToggleButton(osc string, text string) *Control {
 			OSCMessage{
 				OSCAddress: osc,
 				OSCArguments: []OSCArgument{
-					OSCArgument{
-						Version:         argument_version,
-						ActiveAxes:      activeAxesNone,
-						ScalingAxes:     scalingAxes3,
-						ValueOfString:   strPtr("On"),
-						RefOfString:     strPtr("Off"),
-						MaxOfString:     strPtr("On"),
-						DefOfString:     strPtr("1"),
-						MinOfString:     strPtr("Off"),
-						IsListening:     true,
-						DisplayOnWidget: true,
-					},
+					arg,
 				},
 			},
 		},

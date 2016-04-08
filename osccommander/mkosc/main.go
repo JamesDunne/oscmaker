@@ -13,10 +13,6 @@ type ts struct {
 	track int
 }
 
-const (
-	reaper_zero_dB = 0.716878
-)
-
 var track_setup = []ts{
 	{"Master", "red", 1},
 	{"Vox MG", "yellow", 2},
@@ -74,7 +70,7 @@ var colors_for = map[string]Colors{
 	},
 	"purple": Colors{
 		ForeColor:   -3392513,
-		BackColor:   -14090184,
+		BackColor:   -15597543,
 		TextColor:   -1,
 		BorderColor: -12566464,
 		ForeAlpha:   255,
@@ -84,9 +80,19 @@ var colors_for = map[string]Colors{
 	},
 	"green": Colors{
 		ForeColor:   -13382656,
-		BackColor:   -15779072,
+		BackColor:   -16377600,
 		TextColor:   -1,
 		BorderColor: -12566464,
+		ForeAlpha:   255,
+		BackAlpha:   255,
+		TextAlpha:   255,
+		BorderAlpha: 255,
+	},
+	"blue": Colors{
+		ForeColor:   -16751361,
+		BackColor:   -14803426,
+		TextColor:   -1,
+		BorderColor: -16751361,
 		ForeAlpha:   255,
 		BackAlpha:   255,
 		TextAlpha:   255,
@@ -112,17 +118,20 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 	for t, ts := range track_setup {
 		track := ts.track + bank_track
 
-		// Label:
-		c := newToggleButton(fmt.Sprintf("/track/%d/name", track), ts.name)
+		// Mute:
+		c := newToggleButton(fmt.Sprintf("/track/%d/mute", track), "Mute", argFloat)
 		c.X = t*spacing + 0
-		c.Y = 700
+		c.Y = 68
 		c.Width = 120
 		c.Height = 60
-		c.Borderwidth = 1
+		c.Colors = colors_for["blue"]
+		c.Borderwidth = 2
 		c.SmoothingFactor = 12.0
-		c.IsTouchable = false
-		c.DisplayName = false
-		c.LocalFeedback = true
+		c.IsTouchable = true
+		c.DisplayName = true
+		c.LocalFeedback = false
+		c.IsSliding = false
+		c.IsRelative = false
 		layout.Controls = append(layout.Controls, c)
 
 		// Fader:
@@ -142,7 +151,19 @@ func createLayout(bank int, layoutname string, mixname string, masterlabel strin
 		// VU L:
 		// VU R:
 
-		// Mute:
+		// Label:
+		c = newToggleButton(fmt.Sprintf("/track/%d/name", track), ts.name, argString)
+		c.X = t*spacing + 0
+		c.Y = 700
+		c.Width = 120
+		c.Height = 60
+		c.Borderwidth = 1
+		c.SmoothingFactor = 12.0
+		c.IsTouchable = false
+		c.DisplayName = true
+		c.LocalFeedback = true
+		layout.Controls = append(layout.Controls, c)
+
 	}
 
 	// Dump layout XML to stdout:

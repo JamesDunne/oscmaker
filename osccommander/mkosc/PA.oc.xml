@@ -4,6 +4,148 @@
    <width>1280</width>
    <height>752</height>
    <rotation>1</rotation>
+   <toggleButton version="1.8" text="Mute">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/1/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>0</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Master">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/1/volume</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-50116</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-12566464</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>0</X>
+      <Y>130</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>570</height>
+      <borderwidth>0</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>false</displayName>
+      <localFeedback>true</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>true</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </fader>
    <toggleButton version="1.8" text="Master">
       <OSCBundle>
          <OSCMessage>
@@ -66,7 +208,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -75,10 +217,10 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Master">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/1/volume</OSCAddress>
+            <OSCAddress>/track/2/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -119,8 +261,79 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-50116</foreColor>
+         <foreColor>-16751361</foreColor>
          <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>128</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Vox MG">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/2/volume</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-256</foreColor>
+         <backColor>-14803456</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -128,7 +341,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>0</X>
+      <X>128</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -208,7 +421,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -217,10 +430,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Vox MG">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/2/volume</OSCAddress>
+            <OSCAddress>/track/3/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>256</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Vox JD">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/3/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -270,7 +554,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>128</X>
+      <X>256</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -350,7 +634,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -359,10 +643,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Vox JD">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/3/volume</OSCAddress>
+            <OSCAddress>/track/4/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>384</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Vox AS">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/4/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -412,7 +767,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>256</X>
+      <X>384</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -492,7 +847,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -501,10 +856,10 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Vox AS">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/4/volume</OSCAddress>
+            <OSCAddress>/track/6/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -545,8 +900,79 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-256</foreColor>
-         <backColor>-14803456</backColor>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>512</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Gtr MG">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/6/volume</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-3392513</foreColor>
+         <backColor>-15597543</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -554,7 +980,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>384</X>
+      <X>512</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -634,7 +1060,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -643,10 +1069,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Gtr MG">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/6/volume</OSCAddress>
+            <OSCAddress>/track/7/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>640</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Gtr JD">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/7/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -688,7 +1185,7 @@
       </OSCBundle>
       <colors>
          <foreColor>-3392513</foreColor>
-         <backColor>-14090184</backColor>
+         <backColor>-15597543</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -696,7 +1193,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>512</X>
+      <X>640</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -776,7 +1273,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -785,10 +1282,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Gtr JD">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/7/volume</OSCAddress>
+            <OSCAddress>/track/8/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>768</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Bass">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/8/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -830,7 +1398,7 @@
       </OSCBundle>
       <colors>
          <foreColor>-3392513</foreColor>
-         <backColor>-14090184</backColor>
+         <backColor>-15597543</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -838,7 +1406,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>640</X>
+      <X>768</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -918,7 +1486,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -927,10 +1495,10 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Bass">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/8/volume</OSCAddress>
+            <OSCAddress>/track/10/mute</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -971,8 +1539,79 @@
          </OSCMessage>
       </OSCBundle>
       <colors>
-         <foreColor>-3392513</foreColor>
-         <backColor>-14090184</backColor>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>896</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Kick">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/10/volume</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-13382656</foreColor>
+         <backColor>-16377600</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -980,7 +1619,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>768</X>
+      <X>896</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -1060,7 +1699,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -1069,10 +1708,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Kick">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/10/volume</OSCAddress>
+            <OSCAddress>/track/11/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>1024</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Snare">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/11/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1114,7 +1824,7 @@
       </OSCBundle>
       <colors>
          <foreColor>-13382656</foreColor>
-         <backColor>-15779072</backColor>
+         <backColor>-16377600</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -1122,7 +1832,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>896</X>
+      <X>1024</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -1202,7 +1912,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -1211,10 +1921,81 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Snare">
+   <toggleButton version="1.8" text="Mute">
       <OSCBundle>
          <OSCMessage>
-            <OSCAddress>/track/11/volume</OSCAddress>
+            <OSCAddress>/track/12/mute</OSCAddress>
+            <OSCArgument version="1.2">
+               <activeAxes>
+                  <axis>
+                     <number>1</number>
+                     <active>true</active>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <active>false</active>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <active>false</active>
+                  </axis>
+               </activeAxes>
+               <scalingAxes>
+                  <axis>
+                     <number>1</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>2</number>
+                     <function>3</function>
+                  </axis>
+                  <axis>
+                     <number>3</number>
+                     <function>3</function>
+                  </axis>
+               </scalingAxes>
+               <valueOFloat>1</valueOFloat>
+               <refOFloat>0</refOFloat>
+               <maxOFloat>0.716878</maxOFloat>
+               <defOfString>1</defOfString>
+               <minOFloat>0</minOFloat>
+               <isListening>true</isListening>
+               <displayOnWidget>false</displayOnWidget>
+            </OSCArgument>
+         </OSCMessage>
+      </OSCBundle>
+      <colors>
+         <foreColor>-16751361</foreColor>
+         <backColor>-14803426</backColor>
+         <textColor>-1</textColor>
+         <borderColor>-16751361</borderColor>
+         <foreAlpha>255</foreAlpha>
+         <backAlpha>255</backAlpha>
+         <textAlpha>255</textAlpha>
+         <borderAlpha>255</borderAlpha>
+      </colors>
+      <X>1152</X>
+      <Y>68</Y>
+      <Z>0</Z>
+      <width>120</width>
+      <height>60</height>
+      <borderwidth>2</borderwidth>
+      <smoothingFactor>12</smoothingFactor>
+      <rotation>0</rotation>
+      <isTouchable>true</isTouchable>
+      <displayName>true</displayName>
+      <localFeedback>false</localFeedback>
+      <isSliding>false</isSliding>
+      <isRelative>false</isRelative>
+      <contForeImg>false</contForeImg>
+      <font>Dialog-plain-15</font>
+      <backgroundImage> </backgroundImage>
+      <foregroundImage> </foregroundImage>
+   </toggleButton>
+   <fader version="1.8" text="Overheads">
+      <OSCBundle>
+         <OSCMessage>
+            <OSCAddress>/track/12/volume</OSCAddress>
             <OSCArgument version="1.2">
                <activeAxes>
                   <axis>
@@ -1256,7 +2037,7 @@
       </OSCBundle>
       <colors>
          <foreColor>-13382656</foreColor>
-         <backColor>-15779072</backColor>
+         <backColor>-16377600</backColor>
          <textColor>-1</textColor>
          <borderColor>-12566464</borderColor>
          <foreAlpha>255</foreAlpha>
@@ -1264,7 +2045,7 @@
          <textAlpha>255</textAlpha>
          <borderAlpha>255</borderAlpha>
       </colors>
-      <X>1024</X>
+      <X>1152</X>
       <Y>130</Y>
       <Z>0</Z>
       <width>120</width>
@@ -1344,7 +2125,7 @@
       <smoothingFactor>12</smoothingFactor>
       <rotation>0</rotation>
       <isTouchable>false</isTouchable>
-      <displayName>false</displayName>
+      <displayName>true</displayName>
       <localFeedback>true</localFeedback>
       <isSliding>false</isSliding>
       <isRelative>false</isRelative>
@@ -1353,75 +2134,4 @@
       <backgroundImage> </backgroundImage>
       <foregroundImage> </foregroundImage>
    </toggleButton>
-   <fader version="1.8" text="Overheads">
-      <OSCBundle>
-         <OSCMessage>
-            <OSCAddress>/track/12/volume</OSCAddress>
-            <OSCArgument version="1.2">
-               <activeAxes>
-                  <axis>
-                     <number>1</number>
-                     <active>true</active>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <active>false</active>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <active>false</active>
-                  </axis>
-               </activeAxes>
-               <scalingAxes>
-                  <axis>
-                     <number>1</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>2</number>
-                     <function>3</function>
-                  </axis>
-                  <axis>
-                     <number>3</number>
-                     <function>3</function>
-                  </axis>
-               </scalingAxes>
-               <valueOFloat>1</valueOFloat>
-               <refOFloat>0</refOFloat>
-               <maxOFloat>0.716878</maxOFloat>
-               <defOfString>1</defOfString>
-               <minOFloat>0</minOFloat>
-               <isListening>true</isListening>
-               <displayOnWidget>false</displayOnWidget>
-            </OSCArgument>
-         </OSCMessage>
-      </OSCBundle>
-      <colors>
-         <foreColor>-13382656</foreColor>
-         <backColor>-15779072</backColor>
-         <textColor>-1</textColor>
-         <borderColor>-12566464</borderColor>
-         <foreAlpha>255</foreAlpha>
-         <backAlpha>255</backAlpha>
-         <textAlpha>255</textAlpha>
-         <borderAlpha>255</borderAlpha>
-      </colors>
-      <X>1152</X>
-      <Y>130</Y>
-      <Z>0</Z>
-      <width>120</width>
-      <height>570</height>
-      <borderwidth>0</borderwidth>
-      <smoothingFactor>12</smoothingFactor>
-      <rotation>0</rotation>
-      <isTouchable>true</isTouchable>
-      <displayName>false</displayName>
-      <localFeedback>true</localFeedback>
-      <isSliding>false</isSliding>
-      <isRelative>true</isRelative>
-      <contForeImg>false</contForeImg>
-      <font>Dialog-plain-15</font>
-      <backgroundImage> </backgroundImage>
-      <foregroundImage> </foregroundImage>
-   </fader>
 </main>
