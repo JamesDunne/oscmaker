@@ -254,8 +254,8 @@ var (
 		MaxOfString:     strPtr("On"),
 		DefOfString:     strPtr("1"),
 		MinOfString:     strPtr("Off"),
-		IsListening:     true,
-		DisplayOnWidget: true,
+		IsListening:     false,
+		DisplayOnWidget: false,
 	}
 )
 
